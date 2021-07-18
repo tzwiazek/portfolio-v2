@@ -1,5 +1,5 @@
 import * as React from "react";
-import { isMobile } from "../../shared/hooks/checkDevice";
+import { isMobile } from "react-device-detect";
 import { TitleH2 } from "../../assets/styles/globalStyle.styles";
 import { SocialContainer, SocialLink } from "../social/social.styles";
 import {
@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
             Get in touch
          </GetInTouchLink>
       </GetInTouchContainer>
-      {isMobile() &&
+      {isMobile &&
          <SocialContainer type="bottom">
             <SocialLink href="/cv.pdf" target="_blank" rel="noopener noreferrer">
                CV

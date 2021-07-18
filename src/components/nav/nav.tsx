@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { useScroll } from "../../shared/hooks/useScroll";
-import { UseScrollInterface } from "../../shared/interfaces/useScroll.interface";
-import { ScrollDirection } from "../../shared/enums/scrollDirection.enum";
+import React, { Dispatch, SetStateAction, useState, useEffect } from "react";
 import {
   NavContainer,
   LogoLink,
@@ -15,16 +12,29 @@ import {
 } from "./nav.styles";
 
 export default function Nav(): JSX.Element {
-  const { scrollDirection }: UseScrollInterface = useScroll();
-  const [ isMenuActive, setMenuActive ]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
+  const [isMenuActive, setMenuActive]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
+  const [toggleHeader, setToggleHeader]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(undefined);
 
-  function isTop(): boolean {
-    return window.pageYOffset < 50;
-  }
+  useEffect(() => {
+    if (window.pageYOffset > 60) {
+      setToggleHeader(true);
+    } else {
+      setToggleHeader(false);
+    }
 
-  function toggleNav(): string {
-    return (!isTop() && scrollDirection === ScrollDirection.DOWN) ? 'down' : 'up';
-  }
+    const handleScroll = () => {
+      const top: number = window.pageYOffset || document.documentElement.scrollTop;
+      if (top < 60) {
+        setToggleHeader(false);
+      } else {
+        setToggleHeader(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [toggleHeader]);
 
   function hideNav(): void {
     setMenuActive(!isMenuActive);
@@ -33,7 +43,7 @@ export default function Nav(): JSX.Element {
   }
 
   return(
-    <NavContainer toggle={`${toggleNav()}${(toggleNav() === ScrollDirection.DOWN && isMenuActive ? '.hide-menu' : '')}`}>
+    <NavContainer scroll={toggleHeader}>
       <LogoLink to="/">
         <Logo>TZ.</Logo>
       </LogoLink>
@@ -57,3 +67,4 @@ export default function Nav(): JSX.Element {
     </NavContainer>
   );
 }
+

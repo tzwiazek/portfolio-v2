@@ -25,6 +25,9 @@ export const NavContainer = styled.nav<NavContainerInterface>`
   justify-content:space-between;
   transition:0.4s;
   z-index:999;
+  transform:translate(0, 0);
+  outline:none;
+  margin-top:0;
 
   @media screen and ${device.tablet} {
     margin-top:20px;
@@ -32,29 +35,10 @@ export const NavContainer = styled.nav<NavContainerInterface>`
     outline:none;
   }
 
-  ${(props: NavContainerInterface) =>
-    props.toggle === 'up' && `
-      transform:translate(0, 0);
-      transition:0.4s;
-      outline:none;
-      margin-top:0;
-
-      @media screen and ${device.tablet} {
-        margin-top:20px;
-      }
-    `}
-
-  ${(props: NavContainerInterface) =>
-    props.toggle === 'down' && `
-      transform:translate(0, calc(-100% - 20px));
-      transition:0.4s;
-    `}
-
-  ${(props: NavContainerInterface) =>
-    props.toggle === 'down.hide-menu' && `
-      transform:translate(0, -400%);
-      transition:0.7s;
-    `}
+  ${({ scroll }) => scroll && `
+    transform:translate(0, calc(-100% - 20px));
+    transition:0.4s;
+  `}
 `;
 
 export const LogoLink = styled((props: LogoLinkInterface) => <Link {...props} />)`

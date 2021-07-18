@@ -1,7 +1,7 @@
 import { defaultStyleComponentInterface } from "../styledComponents.interface";
 
 export interface NavContainerInterface extends defaultStyleComponentInterface {
-  toggle: string;
+  scroll: boolean;
 };
 export interface LogoLinkInterface extends defaultStyleComponentInterface {
   to: string;
