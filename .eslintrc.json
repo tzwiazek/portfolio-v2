@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1, { "extensions": [".tsx", ".ts", ".js", ".jsx"] }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+        "error"
+    ],
+    "quotes": [
+        "error",
+        "single"
+    ],
+    "semi": [
+        "error",
+        "always"
+    ],
+    "brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "no-console": "off",
+    "@typescript-eslint/no-var-requires": 0
+  }
+}
