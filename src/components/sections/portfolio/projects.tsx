@@ -24,7 +24,7 @@ const Projects: Project[] = [
   {
     name: "portfolio",
     project: {
-      url: "#",
+      url: "https://eager-goldwasser-614770.netlify.app/",
       content: {
         title: "Portfolio",
         description: "Personal portfolio made in Gatsby. I wanted to show personality, branding and developing skills in a simple and straightforward way."

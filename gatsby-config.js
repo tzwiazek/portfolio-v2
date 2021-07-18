@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Tomasz Związek',
     description: 'Front-end developer.',
-    siteUrl: 'http://tzwiazek.pl',
+    siteUrl: 'https://eager-goldwasser-614770.netlify.app/',
     author: 'Tomasz Związek'
   },
   plugins: [
