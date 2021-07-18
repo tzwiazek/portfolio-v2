@@ -34,12 +34,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-eslint-v2',
-    'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-113552197-3',
-      },
-    }
+    'gatsby-plugin-offline'
   ],
 };
