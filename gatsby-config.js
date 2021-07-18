@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Tomasz Związek',
     description: 'Front-end developer.',
+    siteUrl: 'http://tzwiazek.pl',
     author: 'Tomasz Związek'
   },
   plugins: [
