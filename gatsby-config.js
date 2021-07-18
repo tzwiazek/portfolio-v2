@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'Tomasz Związek',
     description: 'Front-end developer.',
-    siteUrl: 'http://tzwiazek.pl',
     author: 'Tomasz Związek'
   },
   plugins: [
@@ -20,6 +19,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
+    `react-device-detect`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
