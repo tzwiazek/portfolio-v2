@@ -29,6 +29,11 @@ export const Section = styled.section<SectionInterface>`
     props.id === 'hero' && `
       height:100vh;
     `}
+
+  ${(props: SectionInterface) =>
+    props.id === 'portfolio' && `
+      margin-top:150px;
+    `}
 `;
 
 export const TitleH1 = styled.h1<TitleH1Interface>`
@@ -44,13 +49,15 @@ export const TitleH1 = styled.h1<TitleH1Interface>`
 `;
 
 export const TitleH2 = styled.h2<TitleH2Interface>`
-  width:100%;
+  width:80%;
   font-weight:500;
   text-align:center;
   font-size:1.6rem;;
+  margin:20px auto;
 
   @media screen and ${device.tablet} {
     font-size:2rem;
+    width:100%;
   }
 `;
 
