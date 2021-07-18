@@ -1,5 +1,5 @@
-import { Link } from "gatsby";
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import { NotFoundInterface, NotFoundLinkInterface } from "../shared/interfaces/components/404.interface";
 
