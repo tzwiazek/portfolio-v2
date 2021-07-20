@@ -4,7 +4,7 @@ import { SocialContainer, SocialLink } from "./social.styles";
 export default function Social(): JSX.Element {
   return(
     <SocialContainer type="right">
-      <SocialLink href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+      <SocialLink href="https://drive.google.com/file/d/1xBlpbwOICaYxcUJsRWl5XqpZG0-00XKG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         CV
       </SocialLink>
       <SocialLink href="https://www.linkedin.com/in/tomasz-związek-7951a319b" target="_blank" rel="noopener noreferrer">
