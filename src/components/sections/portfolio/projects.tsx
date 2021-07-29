@@ -30,6 +30,16 @@ const Projects: Project[] = [
         description: "Personal portfolio made in Gatsby. I wanted to show personality, branding and developing skills in a simple and straightforward way."
       }
     }
+  },
+  {
+    name: "gatsby-ecommerce",
+    project: {
+      url: "https://musing-elion-797f79.netlify.app/",
+      content: {
+        title: "Gatsby e-commerce",
+        description: "Gatsby is commonly used as a static site generator. However, in this project I wanted to check if it can be used as a shop."
+      }
+    }
   }
 ];
 
