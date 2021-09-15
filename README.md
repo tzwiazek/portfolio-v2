@@ -10,4 +10,4 @@ https://eager-goldwasser-614770.netlify.app/
 - eslint
 - tsconfig
 
-![alt text](/src/assets/images/portfilio-lighthouse.png)
+![](src/assets/images/portfilio-lighthouse.png)
