@@ -10,4 +10,4 @@ https://eager-goldwasser-614770.netlify.app/
 - eslint
 - tsconfig
 
-![](src/assets/images/portfolio-lighthouse.png)
+![](github_images/portfolio-lighthouse.png)
