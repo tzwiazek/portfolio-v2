@@ -3,8 +3,8 @@ export interface Project {
   project: {
     url: string;
     content: {
-      title: string,
+      title: string;
       description: string;
-    }
+    };
   };
-};
+}

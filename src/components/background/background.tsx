@@ -1,13 +1,13 @@
-import * as React from "react";
-import { Background, BackgroundLine } from "./backgroud.styles";
+import * as React from 'react';
+import { Background, BackgroundLine } from './backgroud.styles';
 
-const BackgroundContainer: React.FC = () => (
-	<Background>
-		<BackgroundLine></BackgroundLine>
-		<BackgroundLine></BackgroundLine>
-		<BackgroundLine></BackgroundLine>
-		<BackgroundLine></BackgroundLine>
-	</Background>
+const BackgroundContainer = () => (
+  <Background>
+    <BackgroundLine></BackgroundLine>
+    <BackgroundLine></BackgroundLine>
+    <BackgroundLine></BackgroundLine>
+    <BackgroundLine></BackgroundLine>
+  </Background>
 );
 
 export default BackgroundContainer;

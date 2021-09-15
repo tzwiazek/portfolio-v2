@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   NavContainer,
   LogoLink,
@@ -9,11 +9,11 @@ import {
   Menu,
   MenuElement,
   MenuElementLink
-} from "./nav.styles";
+} from './nav.styles';
 
-export default function Nav(): JSX.Element {
-  const [isMenuActive, setMenuActive]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(false);
-  const [toggleHeader, setToggleHeader]: [boolean, Dispatch<SetStateAction<boolean>>] = useState(undefined);
+const Nav = () => {
+  const [isMenuActive, setMenuActive] = useState<boolean>(false);
+  const [toggleHeader, setToggleHeader] = useState<boolean>(false);
 
   useEffect(() => {
     if (window.pageYOffset > 60) {
@@ -31,18 +31,18 @@ export default function Nav(): JSX.Element {
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [toggleHeader]);
 
-  function hideNav(): void {
+  const hideNav = () => {
     setMenuActive(!isMenuActive);
     const checkbox: HTMLInputElement = document.querySelector('#check') as HTMLInputElement;
     checkbox.checked = !isMenuActive;
-  }
+  };
 
-  return(
+  return (
     <NavContainer scroll={toggleHeader}>
       <LogoLink to="/">
         <Logo>TZ.</Logo>
@@ -53,18 +53,25 @@ export default function Nav(): JSX.Element {
         <HamburgerMenuLine />
         <HamburgerMenuLine />
       </MobileHamburgerMenu>
-      <Menu toggle={isMenuActive ? "is-active" : ''}>
+      <Menu toggle={isMenuActive ? 'is-active' : ''}>
         <MenuElement>
-          <MenuElementLink to="/#about" onClick={() => hideNav()}>About</MenuElementLink>
+          <MenuElementLink to="/#about" onClick={() => hideNav()}>
+            About
+          </MenuElementLink>
         </MenuElement>
         <MenuElement>
-          <MenuElementLink to="/#portfolio" onClick={() => hideNav()}>Portfolio</MenuElementLink>
+          <MenuElementLink to="/#portfolio" onClick={() => hideNav()}>
+            Portfolio
+          </MenuElementLink>
         </MenuElement>
         <MenuElement>
-          <MenuElementLink to="/#contact" onClick={() => hideNav()}>Contact</MenuElementLink>
+          <MenuElementLink to="/#contact" onClick={() => hideNav()}>
+            Contact
+          </MenuElementLink>
         </MenuElement>
       </Menu>
     </NavContainer>
   );
-}
+};
 
+export default Nav;

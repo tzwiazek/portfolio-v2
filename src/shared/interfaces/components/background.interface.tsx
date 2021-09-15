@@ -1,4 +1,4 @@
-import { defaultStyleComponentInterface } from "..//styledComponents.interface";
+import { defaultStyleComponentInterface } from '..//styledComponents.interface';
 
-export interface BackgroundInterface extends defaultStyleComponentInterface {};
-export interface BackgroundLineInterface {};
+export interface BackgroundInterface extends defaultStyleComponentInterface {}
+export interface BackgroundLineInterface {}
