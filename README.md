@@ -9,6 +9,7 @@ https://eager-goldwasser-614770.netlify.app/
 - prettier
 - eslint
 - tsconfig
+- mobile-first
 - PWA
 
 ![](github_images/portfolio-lighthouse.png)
