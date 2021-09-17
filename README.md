@@ -3,6 +3,7 @@
 https://eager-goldwasser-614770.netlify.app/
 
 - Gatsby
+- GraphQL
 - Typescript
 - Styled-components
 - SASS
