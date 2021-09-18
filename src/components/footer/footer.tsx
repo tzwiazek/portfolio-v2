@@ -20,7 +20,7 @@ const Footer = () => (
     {isMobile && (
       <SocialContainer type="bottom">
         <SocialLink
-          href="https://drive.google.com/file/d/1xBlpbwOICaYxcUJsRWl5XqpZG0-00XKG/view?usp=sharing"
+          href="https://drive.google.com/file/d/1dv6Cqir13GTjtEeM3gp7_UrpgxZkzaVI/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer">
           CV
