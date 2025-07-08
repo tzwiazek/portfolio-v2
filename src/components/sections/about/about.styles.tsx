@@ -21,7 +21,7 @@ export const AboutWrapper = styled.div<AboutWrapperInterface>`
   flex-wrap:wrap;
 
   @media screen and ${device.tablet} {
-    width:60%;
+    width:65%;
     height:100vh;
   }
 `;
@@ -94,19 +94,19 @@ export const AboutDescription = styled.div<AboutDescriptionInterface>`
   }
 `;
 
-export const Paragraph = styled.p<ParagraphInterface>``;
+export const Paragraph = styled.p<ParagraphInterface>`
+  line-height:1.3;
+`;
 
 export const Company = styled.a<CompanyInterface>`
   text-decoration:none;
   position:relative;
   z-index:0;
   display:inline-block;
-  padding:5px 2px;
   overflow:hidden;
   color:black;
   vertical-align:bottom;
   transition:color .3s ease-out;
-  line-height:1;
 
   &::before {
     content:"";

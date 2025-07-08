@@ -5,7 +5,7 @@ const Social = () => {
   return (
     <SocialContainer type="right">
       <SocialLink
-        href="https://drive.google.com/file/d/1dv6Cqir13GTjtEeM3gp7_UrpgxZkzaVI/view?usp=sharing"
+        href="https://drive.google.com/file/d/1XijdXZnlYP6KnUFsVCNJbxn6FzAjXy8k/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer">
         CV

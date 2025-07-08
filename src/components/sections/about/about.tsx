@@ -43,32 +43,37 @@ const About = () => {
         <AboutContainer>
           <AboutDescription>
             <TitleH2>About me</TitleH2>
+
             <Paragraph>
-              Hi. My name is Tomek. I'm currently working as a front-end developer at{' '}
-              <Company
-                href="https://optimodevelopment.com/"
-                target="_blank"
-                rel="noopener noreferrer">
-                Optimo Development
-              </Company>{' '}
-              /{' '}
+              Senior Front-End / Full-Stack Engineer focused on fast, scalable UIs
+              and clean front-end systems, who recently refreshed a portfolio originally created in 2021.
+            </Paragraph>
+
+            <Paragraph>
+              I’ve built sportsbook platforms at{' '}
               <Company href="https://beefee.co.uk/" target="_blank" rel="noopener noreferrer">
                 Bee-Fee
               </Company>{' '}
-              focused on development sports betting platform.
+              and{' '}
+              <Company href="https://optimodevelopment.com/" target="_blank" rel="noopener noreferrer">
+                Optimo Development
+              </Company>, and enterprise tools at{' '}
+              <Company href="https://silkycoders.com/" target="_blank" rel="noopener noreferrer">
+                Silky Coders
+              </Company>{' '}
+              (LPP Group).
             </Paragraph>
+
             <Paragraph>
-              Since the beginning of my journey I collaborated with talented people to create
-              various digital products for our users. During this time I learned a lot about
-              angular, typescript, mobile and agile (scrum & kanban).
+              Outside of work, I’m building an AI-driven Web3 market platform —
+              combining LLM-based news scoring, on-chain metrics, impact detection,
+              and real-time dashboards using TradingView and Highcharts.
             </Paragraph>
+
             <Paragraph>
-              I define myself by the work I want to do. Digitalization trends offer a great
-              potential and new business opportunities. Skills can be taught, personality is
-              inherent.
-            </Paragraph>
-            <Paragraph>
-              Aside from work, I'm also a cryptocurrency and business enthusiast.
+              I designed the fullstack architecture from scratch: a three-repo monorepo
+              using SvelteKit, PayloadCMS, and Bun/Elysia — with modular backend logic and
+              dual-database setup.
             </Paragraph>
           </AboutDescription>
         </AboutContainer>

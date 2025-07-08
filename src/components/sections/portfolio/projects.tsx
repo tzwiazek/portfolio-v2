@@ -1,43 +1,47 @@
-import { Project } from "../../../shared/interfaces/project.interface";
+import { Project } from '../../../shared/interfaces/project.interface';
 
 const Projects: Project[] = [
   {
-    name:"lvbet",
+    name: 'lvbet',
     project: {
-      url:"https://lvbet.pl/",
+      url: 'https://lvbet.pl/',
       content: {
-        title: "LV BET",
-        description: "A modular, highly efficient, distributed system for servicing a large number of end customers (lvbet.pl, lvbet.com, lvbet.lv). Fully integrated with all leading providers."
+        title: 'LV BET',
+        description:
+          'A modular, highly efficient, distributed system for servicing a large number of end customers (lvbet.pl, lvbet.com, lvbet.lv). Fully integrated with all leading providers.'
       }
     }
   },
   {
-    name: "noblebet",
+    name: 'noblebet',
     project: {
-      url: "https://noblebet.pl/",
+      url: 'https://noblebet.pl/',
       content: {
-        title: "Noblebet",
-        description: "Noblebet is an elite, modern and safe player club that will provide emotions and service at the highest level. Project includes live matches, sports betting, virtual sports, BetBuilder, cash-out and a lot more."
+        title: 'Noblebet',
+        description:
+          'Noblebet is an elite, modern and safe player club that will provide emotions and service at the highest level. Project includes live matches, sports betting, virtual sports, BetBuilder, cash-out and a lot more.'
       }
     }
   },
   {
-    name: "portfolio",
+    name: 'sinsay',
     project: {
-      url: "https://eager-goldwasser-614770.netlify.app/",
+      url: 'https://www.sinsay.com/',
       content: {
-        title: "Portfolio",
-        description: "Personal portfolio made in Gatsby. I wanted to show personality, branding and developing skills in a simple and straightforward way."
+        title: 'Sinsay',
+        description:
+          'E-commerce redesign for Sinsay. Focused on modern UI, smooth user experience and mobile-first performance to reflect fast-fashion brand identity.'
       }
     }
   },
   {
-    name: "gatsby-ecommerce",
+    name: 'side-project',
     project: {
-      url: "https://musing-elion-797f79.netlify.app/",
+      url: 'https://frontend-nuv.vercel.app/',
       content: {
-        title: "Gatsby e-commerce",
-        description: "Gatsby is commonly used as a static site generator. However, in this project I wanted to check if it can be used as a shop."
+        title: 'Side project',
+        description:
+          'Crypto market insights platform. Built to explore data-driven trends, improve decision-making and test ideas in a fast, minimal environment.'
       }
     }
   }
